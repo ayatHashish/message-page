@@ -1,0 +1,127 @@
+:root {
+    --primary-color: #8F0E1F;
+  }
+
+  
+.card-header, .card-footer {
+    background-color: white;
+  }
+
+.img-wrapper img {
+    width: 100%;
+}
+
+
+.card {
+
+    border : unset; 
+     border-radius: unset;
+}
+
+.card-footer .form-control{
+
+    border-radius: 1.25rem !important;
+    border: 2px solid #8F0E1F;
+}
+.card-footer {
+    border-top: unset !important;
+}
+.col-md-6{
+    padding-right: 0px !important;
+     /* padding-left:unset; */
+}
+
+.btn-close {
+background: var(--Main-Primary, #8F0E1F);
+  background-color: #8F0E1F;
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  padding: 11px 75px;
+  font-size: 20px;
+  font-weight: 700;
+  }
+  .btn-close:hover {
+    background-color: #d32f2f;
+  }
+.col-11{
+ 
+    padding-right: unset;  
+}
+   
+  .news-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+.rounded-image {
+    
+    width: 24px; height: 24px;
+    border: 2px solid #8F0E1F;
+
+    border-radius: 50%; /* جعل الصورة دائرية */
+    overflow: hidden; /* تجنب تمدد الحواف خارج الدائرة */
+}
+
+
+
+    /* تعيين لون الحدود باللون الأحمر */
+    .tag {
+        outline: 1px solid #8F0E1F;
+        /* padding: 2px 5px; */
+        margin-right: 5px;
+        cursor: pointer; /* تغيير المؤشر عند التحويم */
+        transition: all 0.3s ease; /* تأثير لطيف عند التحويم */
+        background-color: white;
+        border-radius: 16px;
+        padding: 4px 12px;
+        margin: 2px;
+    }
+
+
+    .tag i {
+     color: #8F0E1F;
+    }
+
+    /* تأثير عند التحويم */
+    .tag:hover {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* إضافة ظل */
+    
+        background-color: #f0f0f0;
+    }
+
+
+    .card ul{
+        border: 1px solid #dfdfdf;
+        width: 100%;
+        
+        padding: .375rem .75rem;
+        /* margin: .75rem 1.25rem; */
+        justify-content: space-evenly;
+        /* background-color: red; */
+        border-radius: 1.25rem;
+        background-clip: padding-box;
+        display: flex;
+    }
+
+  
+
+    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+        
+        /* border-radius: unset !important; */
+        border-color: unset !important;
+        border: unset !important;
+    }
+ 
+
+    .test{
+        padding: .75rem 1.25rem;
+    }
+
+
+    .rounded-circle_uplode {
+        width: 40px;
+         height: 40px;
+         border-radius: 50%;
+         border: 1px solid #8F0E1F
+    }
