@@ -1,127 +1,134 @@
+@charset "UTF-8";
 :root {
-    --primary-color: #8F0E1F;
-  }
+  --primary-color: #8f0e1f; }
 
-  
-.card-header, .card-footer {
-    background-color: white;
-  }
-
-.img-wrapper img {
-    width: 100%;
-}
-
-
-.card {
-
-    border : unset; 
-     border-radius: unset;
-}
-
-.card-footer .form-control{
-
+.message-page .color-icon {
+  color: #8f0e1f; }
+.message-page input:focus, .message-page .btn:focus {
+  box-shadow: unset !important; }
+.message-page .card-header {
+  border-bottom: unset !important; }
+.message-page .card-header,
+.message-page .card-footer {
+  background-color: white; }
+.message-page .img-wrapper img {
+  width: 100%; }
+.message-page .card {
+  border: unset;
+  border-radius: unset; }
+.message-page .card-footer {
+  border-top: unset !important; }
+  .message-page .card-footer .form-control {
     border-radius: 1.25rem !important;
-    border: 2px solid #8F0E1F;
-}
-.card-footer {
-    border-top: unset !important;
-}
-.col-md-6{
-    padding-right: 0px !important;
-     /* padding-left:unset; */
-}
-
-.btn-close {
-background: var(--Main-Primary, #8F0E1F);
-  background-color: #8F0E1F;
+    padding: 1.375rem 0.75rem;
+    justify-content: space-evenly;
+    border-radius: 43px !important;
+    border: 2px solid #8f0e1f; }
+  .message-page .card-footer .col-11 {
+    padding-right: unset; }
+.message-page .col-md-6 {
+  padding-right: 0px !important;
+  /* padding-left:unset; */ }
+.message-page .btn-close {
+  background: var(--Main-Primary, #8f0e1f);
+  background-color: #8f0e1f;
   color: #fff;
   border: none;
   border-radius: 14px;
   padding: 11px 75px;
   font-size: 20px;
-  font-weight: 700;
-  }
-  .btn-close:hover {
-    background-color: #d32f2f;
-  }
-.col-11{
- 
-    padding-right: unset;  
-}
-   
-  .news-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-.rounded-image {
-    
-    width: 24px; height: 24px;
-    border: 2px solid #8F0E1F;
+  font-weight: 700; }
+  .message-page .btn-close:hover {
+    background-color: #d32f2f; }
+.message-page .news-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; }
+.message-page .rounded-image {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #8f0e1f;
+  border-radius: 50%;
+  /* جعل الصورة دائرية */
+  overflow: hidden;
+  /* تجنب تمدد الحواف خارج الدائرة */ }
+.message-page .card ul {
+  border: 1px solid #dfdfdf;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  justify-content: space-evenly;
+  border-radius: 43px;
+  background-clip: padding-box;
+  display: flex; }
+.message-page .nav-tabs .nav-item.show .nav-link,
+.message-page .nav-tabs .nav-link.active {
+  border-color: unset !important;
+  border: unset !important; }
+.message-page .calendar-img {
+  width: 20px; }
+.message-page .nav-tabs .fack-border {
+  display: inline-block;
+  margin-right: 10px;
+  border-right: 1px solid #ccc;
+  padding-right: 10px; }
+.message-page .header-tap-wrapper {
+  padding: 0.75rem 1.25rem; }
+  .message-page .header-tap-wrapper li a:focus,
+  .message-page .header-tap-wrapper li button:focus {
+    text-decoration: underline; }
+  .message-page .header-tap-wrapper li i {
+    color: #1d5178; }
+.message-page .rounded-circle_uplode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  border: 1px solid #8f0e1f; }
+  .message-page .rounded-circle_uplode img {
+    max-width: 100%;
+    max-height: 100%; }
+.message-page .custom-padding {
+  padding: 0.75rem 1.25rem; }
+.message-page .card-edit {
+  padding-top: 0 !important; }
+.message-page .tag {
+  outline: 2px solid #8f0e1f;
+  /* padding: 2px 5px; */
+  margin-right: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: white;
+  border-radius: 16px;
+  padding: 7px 15px;
+  margin: 2px; }
+  .message-page .tag img {
+    margin: 0 7px; }
+  .message-page .tag:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    /* إضافة ظل */
+    background-color: #f0f0f0; }
+.message-page .modal .modal-body .accordion .large-checkbox {
+  width: 20px;
+  height: 20px; }
+.message-page .modal .modal-body .accordion i {
+  margin: 0 10px;
+  color: #ced4da; }
+.message-page .modal .modal-body .accordion .card .card-header {
+  padding: 5px !important;
+  border-bottom: unset; }
+  .message-page .modal .modal-body .accordion .card .card-header h2 {
+    font-weight: 400; }
+    .message-page .modal .modal-body .accordion .card .card-header h2 button {
+      color: black;
+      border: 1px solid #ced4da;
+      padding: 15px 10px !important; }
+.message-page .search input {
+  border: unset !important;
+  padding: 0 10px; }
+  .message-page .search input:focus {
+    box-shadow: unset !important; }
 
-    border-radius: 50%; /* جعل الصورة دائرية */
-    overflow: hidden; /* تجنب تمدد الحواف خارج الدائرة */
-}
-
-
-
-    /* تعيين لون الحدود باللون الأحمر */
-    .tag {
-        outline: 1px solid #8F0E1F;
-        /* padding: 2px 5px; */
-        margin-right: 5px;
-        cursor: pointer; /* تغيير المؤشر عند التحويم */
-        transition: all 0.3s ease; /* تأثير لطيف عند التحويم */
-        background-color: white;
-        border-radius: 16px;
-        padding: 4px 12px;
-        margin: 2px;
-    }
-
-
-    .tag i {
-     color: #8F0E1F;
-    }
-
-    /* تأثير عند التحويم */
-    .tag:hover {
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* إضافة ظل */
-    
-        background-color: #f0f0f0;
-    }
-
-
-    .card ul{
-        border: 1px solid #dfdfdf;
-        width: 100%;
-        
-        padding: .375rem .75rem;
-        /* margin: .75rem 1.25rem; */
-        justify-content: space-evenly;
-        /* background-color: red; */
-        border-radius: 1.25rem;
-        background-clip: padding-box;
-        display: flex;
-    }
-
-  
-
-    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-        
-        /* border-radius: unset !important; */
-        border-color: unset !important;
-        border: unset !important;
-    }
- 
-
-    .test{
-        padding: .75rem 1.25rem;
-    }
-
-
-    .rounded-circle_uplode {
-        width: 40px;
-         height: 40px;
-         border-radius: 50%;
-         border: 1px solid #8F0E1F
-    }
+/*# sourceMappingURL=style.css.map */

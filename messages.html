@@ -7,39 +7,47 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  
+
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bg-light">
 
+
+  <main>
+  <div class="message-page">
 <div class="container mt-5">
+  
   <div class="card">
     <div class="card-header d-flex justify-content-between align-items-center">
     
       <span class="text-muted">
-        <i class="far fa-calendar-alt"></i> 12 May 2024, 12:00AM
+       
+        <img src="./images/Calendar.svg " alt="" class="calendar-img">
+        
+        12 May 2024, 12:00AM
     </span>
-      <div class="mb-2">🔶 Problem</div>
+      <div class="mb-2"><img src="./images/circle.svg" alt=""> Problem</div>
       <button class="btn-close">Close Message</button>
     </div>
-    <div class="card-body">
+
+    <div class="card-body card-edit">
+      <hr>
       <p class="text-decoration">
-        <i class="fas fa-map-marker-alt mx-1"></i> Tayaran St, Cairo
+        <img src="./images/Map Point.svg" alt="" class="calendar-img">
+        Tayaran St, Cairo
     </p>
      
       <p >Since our inception, innovation has been at the core of everything we do. We believe in constantly challenging the status quo and seeking out new opportunities for growth and improvement. Over the years, we have invested heavily in research and development to stay ahead of the curve and deliver cutting-edge solutions to our clients and partners.</p>
       <span>
-        <i class="fas fa-map-marker-alt text-black mx-1"></i>
+    
+        <img src="./images/PointOnMap.svg" alt="" class="calendar-img">
         <a href="https://www.google.com/maps" class="text-primary">https://www.google.com/maps</a>
     </span>
       <div class="mt-4">
-        <span class="tag"><i class="fas fa-file-alt"></i> filena <i class="fas fa-download"></i></span>
-        <span class="tag"><i class="fas fa-file-alt"></i> f2name <i class="fas fa-download"></i></span>
-        <span class="tag"><i class="fas fa-file-alt"></i> file2nai <i class="fas fa-download"></i></span>
-        <span class="tag"><i class="fas fa-file-alt"></i> file2naihj <i class="fas fa-download"></i></span>
+        <span class="tag">  <img src="./images/pdf1.svg" alt="" class="calendar-img"> filena..   <img src="./images/download.svg" alt="" class="calendar-img"></span>
+        <span class="tag">  <img src="./images/pdf1.svg" alt="" class="calendar-img"> f2name..   <img src="./images/download.svg" alt="" class="calendar-img"></span>
+        <span class="tag">  <img src="./images/pdf1.svg" alt="" class="calendar-img"> file2nai   <img src="./images/download.svg" alt="" class="calendar-img"></span>
+        <span class="tag">  <img src="./images/pdf1.svg" alt="" class="calendar-img"> file2naihj   <img src="./images/download.svg" alt="" class="calendar-img"></span>
     </div>
       <div class="img-wrapper">
 
@@ -66,25 +74,27 @@
 
       </div>
     </div>
-<div class="test">
+<div class="header-tap-wrapper">
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
-      <a class="nav-link active" id="reply-tab" data-toggle="tab" href="#replyTab" role="tab" aria-controls="replyTab" aria-selected="true"> <i class="fas fa-comments"></i> Replies</a>
+      <a class="nav-link active" id="reply-tab" data-toggle="tab" href="#replyTab" role="tab" aria-controls="replyTab" aria-selected="true">   <img src="./images/replaies.svg" alt="" class="mx-1"> Replies</a>
   </li>
+
+   <div class="fack-border"></div>
   <li class="nav-item" role="presentation">
     <button type="button" class="btn " data-toggle="modal" data-target="#forwardModal">
-      <i class="fas fa-arrow-left"></i> Forward
+     <img src="./images/Forward.svg" alt="" class="mx-1"> Forward
   </button>
 </li>
 </ul>
 </div>
 
-<!-- تبويب الرد -->
+
 <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade show active" id="replyTab" role="tabpanel" aria-labelledby="reply-tab">
-      <div class="card-footer">
+      <div class="custom-padding">
           <div class="d-flex align-items-center">
-              <img src="./images/image1.png" alt="Nour Mohamed" class="rounded-circle mr-3" style="width: 40px; height: 40px;">
+              <img src="./images/image1.png" alt="Nour Mohamed" class="rounded-circle mr-2" style="width: 40px; height: 40px;">
               <p class="mb-0 font-weight-bold">Nour Mohamed</p>
             </div>
             <div>
@@ -105,14 +115,17 @@
                     <div id="collapseContent" class="collapse" aria-labelledby="headingOne" data-parent="#seeMoreAccordion">
                       <div class="card-body">
 
+                        <hr>
            
-            <p class="text-muted text-center"><i class="fas fa-bell "></i> 12 May 2024, 12:00AM</p>
+            <p class="text-muted text-center"><img src="./images/bell.svg" class="calendar-img"> 12 May 2024, 12:00AM</p>
             <hr>
-            <p class="text-muted text-center"><i class="fas fa-bell"></i> 12 May 2024, 12:00AM</p>
+            <p class="text-muted text-center"><img src="./images/bell.svg" class="calendar-img"> 12 May 2024, 12:00AM</p>
+            <hr>
+
 
             <div class="d-flex align-items-center">
-              <img src="./images/image1.png" alt="Nour Mohamed" class="rounded-circle mr-3" style="width: 40px; height: 40px;">
-              <p class="mb-0 font-weight-bold">ayaa Mohamed</p>
+              <img src="./images/image1.png" alt="Nour Mohamed" class="rounded-circle mr-2" style="width: 40px; height: 40px;">
+              <p class="mb-0 font-weight-bold ">Ayaa Mohamed</p>
             </div>
             <div>
                 <p class="text-muted m-2 ">Since our inception, innovation has been at the core of everything we do. We believe in constantly challenging the status quo and seeking out new opportunities for growth and improvement ...</p>
@@ -140,16 +153,16 @@
                <small class="text-muted text-right d-block">12 May 2024, 12:00AM</small>
                <hr>
                <div class="d-flex align-items-center">
-                <img src="./images/image1.png" alt="Nour Mohamed" class="rounded-circle mr-3" style="width: 40px; height: 40px;">
+                <img src="./images/image1.png" alt="Nour Mohamed" class="rounded-circle mr-2" style="width: 40px; height: 40px;">
                 <p class="mb-0 font-weight-bold">loly Mohamed</p>
               </div>
               <div>
                   <p class="text-muted m-2 ">Since our inception, innovation has been at the core of everything we do. We believe in constantly challenging the status quo and seeking out new opportunities for growth and improvement ...</p>
                   <small class="text-muted text-right d-block">12 May 2024, 12:00AM</small>
                 </div>
-            <div class="mt-4">
-              <span class="tag"><i class="fas fa-file-alt"></i> filena <i class="fas fa-download"></i></span>
-              <span class="tag"><i class="fas fa-file-alt"></i> f2name <i class="fas fa-download"></i></span>
+            <div class="">
+              <span class="tag">  <img src="./images/pdf1.svg" alt="" class="calendar-img"> filena   <img src="./images/download.svg" alt="" class="calendar-img"></span>
+              <span class="tag">  <img src="./images/pdf1.svg" alt="" class="calendar-img"> f2name   <img src="./images/download.svg" alt="" class="calendar-img"></span>
              
           </div>
         </div>
@@ -162,12 +175,12 @@
           <div class="col-11">
   <div style="position: relative;">
               <input type="text" class="form-control" placeholder="Write your reply...">
-              <div style="position: absolute; top: 50%; right:10px; transform: translateY(-50%); top: 62%;
+              <div style="position: absolute;transform: translateY(-50%); top: 55%;
               right: 20px;">
                 <label for="pdf-upload">
                   <input type="file" id="pdf-upload" accept=".pdf" style="display: none;">
-                  <!-- <img src="upload_icon.png" alt="Upload icon"> -->
-                  <i class="fas fa-file-alt " style="font-size: 1.3rem;"></i>
+                  <img src="./images/papercapsol.svg" alt="">
+               
                 </label>
               </div>
           </div>
@@ -175,7 +188,9 @@
           </div>
           <div class="col-1">
                  <div class="rounded-circle_uplode " >
-            <i class="fas fa-file-alt " style="margin: 11px 13px; color: brown;"></i>
+   
+            <img src="./images/Plain.svg" alt="">
+            <!-- <i class="fa-solid fa-play" style="margin: 11px 13px; color: brown;"></i> -->
           </div>
          
           </div>
@@ -194,66 +209,109 @@
   </div>
 </div>
 
-<!-- نافذة التأكيد للفورورد -->
-<div class="modal fade" id="forwardModal" tabindex="-1" role="dialog" aria-labelledby="forwardModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="forwardModalLabel">Forward message to </h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
+  <!-- Modal -->
+   <div class="modal fade" id="forwardModal" tabindex="-1" role="dialog" aria-labelledby="forwardModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="forwardModalLabel">Forward message to</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+
+                <!-- Search///////// -->
+                <div class="search">
+                  <div class="input-group mb-3">
+                      <img src="./images/search-icon.svg" alt="">
+                      <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
+                      <div class="input-group-prepend">
+                        <i class="fas fa-times"></i>
+                 
+                      </div>
+                  </div>
+                </div>
+           <!-- Search///////// -->
+                  <div class="accordion" id="accordionExample">
+                      <div class="card">
+                          <div class="card-header" id="headingOne">
+                              <h2 class="mb-0">
+                                  <button class="btn btn-link btn-block text-left d-flex justify-content-between align-items-center" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                      Organizations Unit
+                                      <div class="d-flex align-items-center">
+                                          <input class="form-check-input  large-checkbox " type="checkbox" value="" id="defaultCheck1">
+                                          <i class="fas fa-chevron-down "></i>
+                                      </div>
+                                  </button>
+                              </h2>
+
+                              <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="accordion" id="adminHeading">
+                                <div class="card">
+                                  <div class="card-header" id="adminHeadingOne">
+                                      <h2 class="mb-0">
+                                          <button class="btn btn-link btn-block text-left d-flex justify-content-between align-items-center" type="button" data-toggle="collapse" data-target="#admin" aria-expanded="true" aria-controls="admin">
+                                            Admin
+                                              <div class="d-flex align-items-center">
+                                                  <input class="form-check-input large-checkbox" type="checkbox" value="" id="defaultCheck1">
+                                                  <i class="fas fa-chevron-down "></i>
+                                              </div>
+                                          </button>
+                                      </h2>
+                                  </div>
+                                  <div id="admin" class="collapse " aria-labelledby="adminHeadingOne" data-parent="#adminHeading">
+        
+                                      <div class="card-body">
+        
+                                          <div class="d-flex justify-content-between align-items-center">
+                                              <label class="form-check-label" for="defaultCheck2">Admins</label>
+                                              <div class="d-flex align-items-center">
+                                                  <input class="form-check-input  large-checkbox " type="checkbox" value="" id="defaultCheck2">
+                                           
+                                              </div>
+                                          </div>
+                                          <div class="d-flex justify-content-between align-items-center mt-2">
+                                              <label class="form-check-label" for="defaultCheck3">Admins</label>
+                                              <div class="d-flex align-items-center">
+                                                  <input class="form-check-input  large-checkbox " type="checkbox" value="" id="defaultCheck3">
+                                      
+                                              </div>
+                                          </div>
+                                          <div class="d-flex justify-content-between align-items-center mt-2">
+                                              <label class="form-check-label" for="defaultCheck4">Admins</label>
+                                              <div class="d-flex align-items-center">
+                                                  <input class="form-check-input  large-checkbox " type="checkbox" value="" id="defaultCheck4">
+                                        
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                </div>
+                            
+                              </div>
+                            </div>
 
 
-        <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="basic-addon1"><i class="fas fa-times"></i></span>
-          </div>
-        </div>
-        
-        <!-- عنصر الأكورديون -->
-        <div class="accordion" id="accordionExample">
-          <div class="card">
-            <div class="card-header" id="headingOne">
-              <h2 class="mb-0">
-                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Collapsible Group Item #1
-                </button>
-              </h2>
-            </div>
-        
-            <div id="collapseOne" class="collapse  show " aria-labelledby="headingOne" data-parent="#accordionExample">
-              <div class="card-body">
-                Some placeholder content for the first accordion panel. This panel is shown by default, thanks to the <code>.show</code> class.
+                          </div>
+                      </div>
+                 
+                  </div>
+
               </div>
-            </div>
           </div>
-        
-          <div class="card">
-            <div class="card-header" id="headingThree">
-              <h2 class="mb-0">
-                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Collapsible Group Item #3
-                </button>
-              </h2>
-            </div>
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-              <div class="card-body">
-                And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- نهاية عنصر الأكورديون -->
       </div>
- 
-    </div>
   </div>
-</div>
 
+
+
+  </div>
+  </main>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
