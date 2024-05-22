@@ -4,7 +4,8 @@
 
 .message-page .color-icon {
   color: #8f0e1f; }
-.message-page input:focus, .message-page .btn:focus {
+.message-page input:focus,
+.message-page .btn:focus {
   box-shadow: unset !important; }
 .message-page .card-header {
   border-bottom: unset !important; }
@@ -110,25 +111,54 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     /* إضافة ظل */
     background-color: #f0f0f0; }
-.message-page .modal .modal-body .accordion .large-checkbox {
-  width: 20px;
-  height: 20px; }
-.message-page .modal .modal-body .accordion i {
-  margin: 0 10px;
-  color: #ced4da; }
-.message-page .modal .modal-body .accordion .card .card-header {
-  padding: 5px !important;
-  border-bottom: unset; }
-  .message-page .modal .modal-body .accordion .card .card-header h2 {
-    font-weight: 400; }
-    .message-page .modal .modal-body .accordion .card .card-header h2 button {
-      color: black;
-      border: 1px solid #ced4da;
-      padding: 15px 10px !important; }
-.message-page .search input {
-  border: unset !important;
-  padding: 0 10px; }
-  .message-page .search input:focus {
-    box-shadow: unset !important; }
+.message-page .modal .modal-content {
+  border-radius: 0.7rem; }
+  .message-page .modal .modal-content .modal-header {
+    border-bottom: unset; }
+    .message-page .modal .modal-content .modal-header .close:focus {
+      border: unset !important; }
+  .message-page .modal .modal-content .modal-body {
+    padding: 0 1rem 1rem; }
+    .message-page .modal .modal-content .modal-body .search {
+      padding: 0 10px;
+      display: flex;
+      align-items: center; }
+      .message-page .modal .modal-content .modal-body .search input {
+        border: unset !important;
+        padding: 0 10px; }
+      .message-page .modal .modal-content .modal-body .search .input-group-prepend {
+        margin-left: 10px; }
+      .message-page .modal .modal-content .modal-body .search .form-control {
+        flex: 1; }
+    .message-page .modal .modal-content .modal-body .accordion .large-checkbox {
+      width: 20px;
+      height: 20px;
+      overflow: hidden; }
+    .message-page .modal .modal-content .modal-body .accordion input[type="checkbox"] {
+      accent-color: #8f0e1f !important;
+      /* لون الخلفية عند التحديد */
+      color: #8f0e1f !important;
+      /* لون الخلفية عند التحديد */ }
+    .message-page .modal .modal-content .modal-body .accordion input[type="checkbox"]:checked:after {
+      accent-color: #8f0e1f !important; }
+    .message-page .modal .modal-content .modal-body .accordion i {
+      margin: 0 10px;
+      color: #ced4da; }
+    .message-page .modal .modal-content .modal-body .accordion .card .card-header {
+      padding: 5px !important;
+      border-bottom: unset; }
+      .message-page .modal .modal-content .modal-body .accordion .card .card-header h2 {
+        font-weight: 400; }
+        .message-page .modal .modal-content .modal-body .accordion .card .card-header h2 button {
+          color: black;
+          border: 1px solid #ced4da;
+          padding: 15px 10px !important;
+          font-weight: 500; }
+          .message-page .modal .modal-content .modal-body .accordion .card .card-header h2 button:focus + button {
+            border: unset;
+            border-bottom: 1px solid #ced4da !important; }
+        .message-page .modal .modal-content .modal-body .accordion .card .card-header h2 .btn-link.focus,
+        .message-page .modal .modal-content .modal-body .accordion .card .card-header h2 .btn-link:focus {
+          text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */

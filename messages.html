@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
@@ -218,20 +218,25 @@
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                   </button>
-              </div>
+              
+              </div>  
+         
               <div class="modal-body">
-
+     <hr>
                 <!-- Search///////// -->
-                <div class="search">
-                  <div class="input-group mb-3">
-                      <img src="./images/search-icon.svg" alt="">
-                      <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
-                      <div class="input-group-prepend">
-                        <i class="fas fa-times"></i>
-                 
-                      </div>
-                  </div>
-                </div>
+              
+
+<div class="search">
+    <div class="input-group mb-3 align-items-center">
+        <img src="./images/search-icon.svg" alt="" class="search-icon">
+        <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1" id="searchInput">
+        <div class="input-group-prepend">
+            <i class="fas fa-times text-muted" id="clearIcon" style="display: none; cursor: pointer;"></i>
+            <!-- <i class="fas fa-times" id="clearIcon" ></i> -->
+        </div>
+    </div>
+</div>
+
            <!-- Search///////// -->
                   <div class="accordion" id="accordionExample">
                       <div class="card">
@@ -317,5 +322,6 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="./js/script.js"></script>
 </body>
 </html>

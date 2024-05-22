@@ -6,8 +6,8 @@
   .color-icon {
     color: #8f0e1f;
   }
-  input:focus ,.btn:focus {
- 
+  input:focus,
+  .btn:focus {
     box-shadow: unset !important;
   }
 
@@ -160,42 +160,79 @@
   }
 
   .modal {
-    .modal-body {
-      .accordion {
-        .large-checkbox {
-          width: 20px;
-          height: 20px;
+    .modal-content {
+      border-radius: 0.7rem;
+      .modal-header {
+        border-bottom: unset;
+        .close:focus {
+          border: unset !important;
         }
-        i {
-          margin: 0 10px;
-          color: #ced4da;
+      }
+      .modal-body {
+        padding: 0 1rem 1rem;
+
+        .search {
+          padding: 0 10px;
+          display: flex;
+          align-items: center;
+          input {
+            border: unset !important;
+            padding: 0 10px;
+          }
+
+          .input-group-prepend {
+            margin-left: 10px;
+          }
+          .form-control {
+            flex: 1;
+          }
         }
 
-        .card {
-          .card-header {
-            padding: 5px !important;
-            border-bottom: unset;
-            h2 {
-              font-weight: 400;
-              button {
-                color: black;
-                border: 1px solid #ced4da;
-                padding: 15px 10px !important;
+        .accordion {
+          .large-checkbox {
+            width: 20px;
+            height: 20px;
+            overflow: hidden;
+          }
+          input[type="checkbox"] {
+            accent-color: #8f0e1f !important; /* لون الخلفية عند التحديد */
+            color: #8f0e1f !important; /* لون الخلفية عند التحديد */
+          }
+          input[type="checkbox"]:checked:after {
+          
+            accent-color: #8f0e1f !important;
+          }
+          i {
+            margin: 0 10px;
+            color: #ced4da;
+          }
+
+          .card {
+            .card-header {
+              padding: 5px !important;
+              border-bottom: unset;
+              h2 {
+                font-weight: 400;
+                button {
+                  color: black;
+                  border: 1px solid #ced4da;
+                  padding: 15px 10px !important;
+                  font-weight: 500;
+
+                  &:focus + button {
+                    border: unset;
+                    border-bottom: 1px solid #ced4da !important;
+                  }
+                }
+
+                .btn-link.focus,
+                .btn-link:focus {
+                  text-decoration: none;
+                }
               }
             }
           }
         }
-      }
-    }
-  }
-
-  .search {
-    input {
-      border: unset !important;
-      padding: 0 10px;
-
-      &:focus {
-        box-shadow: unset !important;
       }
     }
   }
