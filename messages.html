@@ -43,7 +43,7 @@
         <img src="./images/PointOnMap.svg" alt="" class="calendar-img">
         <a href="https://www.google.com/maps" class="text-primary">https://www.google.com/maps</a>
     </span>
-      <div class="mt-4">
+      <div class="mt-4 edit-tag">
         <span class="tag">  <img src="./images/pdf1.svg" alt="" class="calendar-img"> filena..   <img src="./images/download.svg" alt="" class="calendar-img"></span>
         <span class="tag">  <img src="./images/pdf1.svg" alt="" class="calendar-img"> f2name..   <img src="./images/download.svg" alt="" class="calendar-img"></span>
         <span class="tag">  <img src="./images/pdf1.svg" alt="" class="calendar-img"> file2nai   <img src="./images/download.svg" alt="" class="calendar-img"></span>
@@ -106,7 +106,7 @@
                 <div class="card">
                     <div class="card-header" id="headingOne">
                         <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-muted text-center" type="button" data-toggle="collapse" data-target="#collapseContent" aria-expanded="true" aria-controls="collapseContent">
+                            <button id="more" class="btn btn-link btn-block text-muted text-center" type="button" data-toggle="collapse" data-target="#collapseContent" aria-expanded="true" aria-controls="collapseContent">
                                 see more <i class="fas fa-chevron-down"></i>
                             </button>
                         </h2>
@@ -167,6 +167,13 @@
           </div>
         </div>
         </div>
+
+
+        <h2 class="mb-0">
+          <button id="less" class="btn btn-link btn-block text-muted text-center d-none" type="button" data-toggle="collapse" data-target="#collapseContent" aria-expanded="true" aria-controls="collapseContent">
+              see less <i class="fas fa-chevron-up"></i>
+          </button>
+      </h2>
       </div>
     </div>
       </div>
@@ -232,7 +239,6 @@
         <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1" id="searchInput">
         <div class="input-group-prepend">
             <i class="fas fa-times text-muted" id="clearIcon" style="display: none; cursor: pointer;"></i>
-            <!-- <i class="fas fa-times" id="clearIcon" ></i> -->
         </div>
     </div>
 </div>
@@ -301,7 +307,123 @@
                           </div>
                       </div>
                  
+
+                      
                   </div>
+
+                  
+<div class="accordion" id="accordionExample2">
+  <div class="card">
+      <div class="card-header" id="headingTwo">
+          <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left d-flex justify-content-between align-items-center" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                  Organizations Unit
+                  <div class="d-flex align-items-center">
+                      <input class="form-check-input  large-checkbox " type="checkbox" value="" id="defaultCheck5">
+                      <i class="fas fa-chevron-down "></i>
+                  </div>
+              </button>
+          </h2>
+
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample2">
+              <div class="accordion" id="adminHeading2">
+                  <div class="card">
+                      <div class="card-header" id="adminHeadingOne2">
+                          <h2 class="mb-0">
+                              <button class="btn btn-link btn-block text-left d-flex justify-content-between align-items-center" type="button" data-toggle="collapse" data-target="#admin2" aria-expanded="true" aria-controls="admin2">
+                                  Admin
+                                  <div class="d-flex align-items-center">
+                                      <input class="form-check-input large-checkbox" type="checkbox" value="" id="defaultCheck5">
+                                      <i class="fas fa-chevron-down "></i>
+                                  </div>
+                              </button>
+                          </h2>
+                      </div>
+                      <div id="admin2" class="collapse" aria-labelledby="adminHeadingOne2" data-parent="#adminHeading2">
+                          <div class="card-body">
+                              <div class="d-flex justify-content-between align-items-center">
+                                  <label class="form-check-label" for="defaultCheck6">Admins</label>
+                                  <div class="d-flex align-items-center">
+                                      <input class="form-check-input large-checkbox" type="checkbox" value="" id="defaultCheck6">
+                                  </div>
+                              </div>
+                              <div class="d-flex justify-content-between align-items-center mt-2">
+                                  <label class="form-check-label" for="defaultCheck7">Admins</label>
+                                  <div class="d-flex align-items-center">
+                                      <input class="form-check-input large-checkbox" type="checkbox" value="" id="defaultCheck7">
+                                  </div>
+                              </div>
+                              <div class="d-flex justify-content-between align-items-center mt-2">
+                                  <label class="form-check-label" for="defaultCheck8">Admins</label>
+                                  <div class="d-flex align-items-center">
+                                      <input class="form-check-input large-checkbox" type="checkbox" value="" id="defaultCheck8">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="accordion" id="accordionExample3">
+  <div class="card">
+      <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left d-flex justify-content-between align-items-center" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                  Organizations Unit
+                  <div class="d-flex align-items-center">
+                      <input class="form-check-input  large-checkbox " type="checkbox" value="" id="defaultCheck9">
+                      <i class="fas fa-chevron-down "></i>
+                  </div>
+              </button>
+          </h2>
+
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample3">
+              <div class="accordion" id="adminHeading3">
+                  <div class="card">
+                      <div class="card-header" id="adminHeadingOne3">
+                          <h2 class="mb-0">
+                              <button class="btn btn-link btn-block text-left d-flex justify-content-between align-items-center" type="button" data-toggle="collapse" data-target="#admin3" aria-expanded="true" aria-controls="admin3">
+                                  Admin
+                                  <div class="d-flex align-items-center">
+                                      <input class="form-check-input large-checkbox" type="checkbox" value="" id="defaultCheck9">
+                                      <i class="fas fa-chevron-down "></i>
+                                  </div>
+                              </button>
+                          </h2>
+                      </div>
+                      <div id="admin3" class="collapse" aria-labelledby="adminHeadingOne3" data-parent="#adminHeading3">
+                          <div class="card-body">
+                              <div class="d-flex justify-content-between align-items-center">
+                                  <label class="form-check-label" for="defaultCheck10">Admins</label>
+                                  <div class="d-flex align-items-center">
+                                      <input class="form-check-input large-checkbox" type="checkbox" value="" id="defaultCheck10">
+                                  </div>
+                              </div>
+                              <div class="d-flex justify-content-between align-items-center mt-2">
+                                  <label class="form-check-label" for="defaultCheck11">Admins</label>
+                                  <div class="d-flex align-items-center">
+                                      <input class="form-check-input large-checkbox" type="checkbox" value="" id="defaultCheck11">
+                                  </div>
+                              </div>
+                              <div class="d-flex justify-content-between align-items-center mt-2">
+                                  <label class="form-check-label" for="defaultCheck12">Admins</label>
+                                  <div class="d-flex align-items-center">
+                                      <input class="form-check-input large-checkbox" type="checkbox" value="" id="defaultCheck12">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
 
               </div>
           </div>

@@ -49,7 +49,7 @@
   }
 
   .btn-close {
-    background: var(--Main-Primary, #8f0e1f);
+
     background-color: #8f0e1f;
     color: #fff;
     border: none;
@@ -59,7 +59,10 @@
     font-weight: 700;
 
     &:hover {
-      background-color: #d32f2f;
+      background-color: #fff;
+    border: 1px solid #8f0e1f ;
+    color: #8f0e1f;
+
     }
   }
 
@@ -125,11 +128,14 @@
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    background-color: #f0f0f0;
+    // background-color: #f0f0f0;
     border: 1px solid #8f0e1f;
     img {
       max-width: 100%;
       max-height: 100%;
+    }
+    &:hover{
+      background-color: #f0f0f0;
     }
   }
 
@@ -237,3 +243,24 @@
     }
   }
 }
+
+
+@media screen and (max-width: 768px) {  
+
+    .card-header{
+      flex-direction: column;
+    }
+
+    .edit-tag{
+      display: flex;
+      flex-direction: column;
+       .tag {
+        margin: 10px !important;
+
+      
+  }
+    }
+  }
+    
+  
+

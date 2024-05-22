@@ -31,7 +31,6 @@
   padding-right: 0px !important;
   /* padding-left:unset; */ }
 .message-page .btn-close {
-  background: var(--Main-Primary, #8f0e1f);
   background-color: #8f0e1f;
   color: #fff;
   border: none;
@@ -40,7 +39,9 @@
   font-size: 20px;
   font-weight: 700; }
   .message-page .btn-close:hover {
-    background-color: #d32f2f; }
+    background-color: #fff;
+    border: 1px solid #8f0e1f;
+    color: #8f0e1f; }
 .message-page .news-card img {
   width: 100%;
   height: auto;
@@ -86,11 +87,12 @@
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  background-color: #f0f0f0;
   border: 1px solid #8f0e1f; }
   .message-page .rounded-circle_uplode img {
     max-width: 100%;
     max-height: 100%; }
+  .message-page .rounded-circle_uplode:hover {
+    background-color: #f0f0f0; }
 .message-page .custom-padding {
   padding: 0.75rem 1.25rem; }
 .message-page .card-edit {
@@ -160,5 +162,15 @@
         .message-page .modal .modal-content .modal-body .accordion .card .card-header h2 .btn-link.focus,
         .message-page .modal .modal-content .modal-body .accordion .card .card-header h2 .btn-link:focus {
           text-decoration: none; }
+
+@media screen and (max-width: 768px) {
+  .card-header {
+    flex-direction: column; }
+
+  .edit-tag {
+    display: flex;
+    flex-direction: column; }
+    .edit-tag .tag {
+      margin: 10px !important; } }
 
 /*# sourceMappingURL=style.css.map */
