@@ -20,28 +20,24 @@ clearIcon.addEventListener('click', function() {
 });
 
 
-
-
 let seeMore = document.getElementById('more');
 let seeLess = document.getElementById('less');
-let content = document.getElementById('collapseContent');
+
 
 seeMore.addEventListener('click', function() {
-    let content = document.getElementById('collapseContent');
-
-    content.classList.add(show)
-    seeMore.style.display= none
-    seeLess.style.display= block
- 
+    seeMore.style.display= "none"
+    seeLess.style.display= "block "
 });
-
-
 
 seeLess.addEventListener('click', function() {
-let content = document.getElementById('collapseContent');
+    let content = document.getElementById('collapseContent');
+    seeMore.style.display= "block"
+    seeLess.style.display= "none "
+    content.classList.remove("show")
 
-    content.classList.add(hide)
-    seeLess.style.display= none
-    seeMore.style.display= block
- 
+
 });
+
+
+
+

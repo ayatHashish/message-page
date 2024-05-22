@@ -2,6 +2,8 @@
 :root {
   --primary-color: #8f0e1f; }
 
+.message-page .d {
+  display: none; }
 .message-page .color-icon {
   color: #8f0e1f; }
 .message-page input:focus,
